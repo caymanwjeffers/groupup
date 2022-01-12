@@ -1,38 +1,69 @@
-.App {
-  text-align: center;
+/* Font Imports */
+@font-face {
+    font-family: 'PoppinsRegular';
+    src: url('./assets/fonts/Poppins/Poppins-Regular.ttf')
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+@font-face {
+    font-family: 'PoppinsSemiBold';
+    src: url('./assets/fonts/Poppins/Poppins-SemiBold.ttf')
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+@font-face {
+    font-family: 'PoppinsBold';
+    src: url('./assets/fonts/Poppins/Poppins-Bold.ttf')
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+:root {
+    --_16: 16px;
+    --_20: 20px;
+    --_25: 25px;
+    --_31: 31px;
+    --_39: 39px;
+    --_48: 48px
 }
 
-.App-link {
-  color: #61dafb;
+:root {
+    --spacing_xxs: 4px;
+    --spacing_xs: 8px;
+    --spacing_s: 12px;
+    --spacing_base: 16px;
+    --spacing_md: 24px;
+    --spacing_lg: 32px;
+    --spacing_xl: 48px;
+    --spacing_xxl: 64px
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/* Global text defaults */
+h1 {
+    font-family: 'PoppinsSemiBold';
+    font-size: var(--_48);
+    margin: 0; 
+    padding: 0;
+}
+
+h2 {
+    font-family: 'poppinsRegular';
+    font-size: var(--_31);
+    margin: 0;
+    padding: 0;
+}
+
+p {
+    font-family: 'poppinsRegular';
+    font-size: var(--_16);
+    margin: 0;
+    padding: 0
+}
+
+/* Global component defaults */
+
+.page-container {
+    padding: var(--spacing_lg)
+}
+
+.container-space-between {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
 }
